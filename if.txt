@@ -1,0 +1,25 @@
+WITH Ada.Text_IO ;            USE Ada.Text_IO ;
+WITH Ada.Integer_Text_IO ;    USE Ada.Integer_Text_IO ;
+
+PROCEDURE VotreAge IS
+   c : character := 'c';
+   a : integer;
+   b : integer := 7;
+   d : integer := 3;
+BEGIN
+	if c = 'a' then a := 1;
+	elsif c = 'b' then a := 2;
+	elsif c = 'c' then a := 3;
+	else a := 4;
+    end if;
+    put("Premier affichage");
+	put( a );
+
+	if (a < 2 AND d < 4) then a := 1;
+	elsif ((a > 2 OR b = 9) AND c = 'c') then a := 2;
+	else a := 3;
+	end if;
+	put("Deuxieme affichage");
+	put(a);
+
+END VotreAge ;

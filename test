@@ -1,0 +1,8 @@
+With Ada;
+With Hajar;
+Procedure Home IS
+    S : String := "Adnane";
+BEGIN
+    put(S);
+    put(S);
+END Home;

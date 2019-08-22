@@ -1,0 +1,30 @@
+WITH Ada.Text_IO ;            USE Ada.Text_IO ;
+WITH Ada.Integer_Text_IO ;    USE Ada.Integer_Text_IO ;
+
+PROCEDURE VotreAge IS
+   type my_vector is record 
+	x : integer;
+   	y : string;
+    z : character;
+   end record;
+   
+   str : my_vector;
+   i : integer;
+   f : float;
+   
+BEGIN	
+	str.x := 4;
+	str.y := "toto";
+	str.z := 'z';
+
+	i := (4 * str.x)+2;
+    f := (2.5 * str.x) / 3;
+
+	put( str.x );
+	put( str.y );
+	put( str.z );
+    put( i );
+    put( f );
+
+END VotreAge ;
+	

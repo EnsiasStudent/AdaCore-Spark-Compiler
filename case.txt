@@ -1,0 +1,15 @@
+WITH Ada.Text_IO;   USE Ada.Text_IO;
+WITH Ada.Integer_Text_IO;   USE Ada.Integer_Text_IO;
+
+PROCEDURE VotreAge IS
+    a : integer := 3;
+    c : character;
+BEGIN
+    CASE a IS
+        WHEN 1 => c := 'a';
+        WHEN 2 => c := 'b';
+        WHEN 3 => c := 'e';
+        WHEN OTHERS => c := 'd';
+    end CASE;
+    put(c);
+END VotreAge;

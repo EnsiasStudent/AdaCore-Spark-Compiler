@@ -1,0 +1,14 @@
+WITH Ada.Text_IO ;            USE Ada.Text_IO ;
+WITH Ada.Integer_Text_IO ;    USE Ada.Integer_Text_IO ;
+
+PROCEDURE VotreAge IS
+   a : integer := 0;
+   i : integer := 2;
+BEGIN
+	while a < 10
+	   loop 
+		a := a + i; 
+           end loop;
+    put("Resultat de notre loop");
+	put ( a );
+END VotreAge ;
